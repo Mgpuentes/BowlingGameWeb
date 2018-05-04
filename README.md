@@ -15,8 +15,8 @@ Run command: gradlew test
 
 ## Deployment
 
-Run command: gradlew clean build
-Run command: gradlew bootRun
+* Run command: gradlew clean build
+* Run command: gradlew bootRun
 
 ## Built With
 

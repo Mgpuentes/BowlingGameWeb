@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * @author Matthew
  */
 
-@Service
+
 public class Frame {
     private int[] ball;
     private boolean isFinalFrame;

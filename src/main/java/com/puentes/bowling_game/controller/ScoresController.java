@@ -11,19 +11,19 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by Matthew on 5/2/2018.
  *
- * @author Matthew
+ * @author Matthew Puentes
  */
 
 @RestController
 @RequestMapping(value = "/scores")
 public class ScoresController {
 
-    private final Frame frame;
-
-    @Autowired
-    public ScoresController(Frame frame) {
-        this.frame = frame;
-    }
+//    private final Frame frame;
+//
+//    @Autowired
+//    public ScoresController(Frame frame) {
+//        this.frame = frame;
+//    }
 
     /**
      * Compute values sent from total score of game.
@@ -44,8 +44,9 @@ public class ScoresController {
 
         String input = (stringBuilder.toString().trim());
 
-        assert input.length() == 10; // "X X X X X X X X X XXX"
+        assert input.length() == 10;
 
+        // "X X X X X X X X X XXX" works if hardcoded to input
         int totalScore = ScoreBoard.executeInputs(input);
 
         return totalScore;

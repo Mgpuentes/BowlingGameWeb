@@ -1,6 +1,7 @@
 package com.puentes.bowling_game.service;
 
 import com.puentes.bowling_game.service.Frame;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by Matthew on 5/4/2018.
@@ -8,6 +9,7 @@ import com.puentes.bowling_game.service.Frame;
  * @author Matthew Puentes
  */
 
+@Service
 public class ScoreBoard {
 
     /**

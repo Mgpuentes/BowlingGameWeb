@@ -1,0 +1,84 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Bowling Scoresheet</title>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+    <link href="css/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+
+    <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js}"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body background="../static/images/bowling.jpg">
+
+  <div id='title' class='title'><h1>Bowling Scoresheet</h1></div>
+
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class='wrapper text-center'>
+    <div id="scoreButtons" class="btn-group mr-2" role="group" aria-label="First group">
+      <button id="button1" type="button" class="btn btn-secondary">1</button>
+      <button id="button2" type="button" class="btn btn-secondary">2</button>
+      <button id="button3" type="button" class="btn btn-secondary">3</button>
+      <button id="button4" type="button" class="btn btn-secondary">4</button>
+        <button id="button5" type="button" class="btn btn-secondary">5</button>
+        <button id="button6" type="button" class="btn btn-secondary">6</button>
+        <button id="button7" type="button" class="btn btn-secondary">7</button>
+        <button id="button8" type="button" class="btn btn-secondary">8</button>
+        <button id="button9" type="button" class="btn btn-secondary">9</button>
+        <button id="button10" type="button" class="btn btn-secondary">10</button>
+    </div>
+    </div>
+  </div>
+
+  <div id='scoresheet'>
+    <table id='scoresheetTable' class='scoresheet' cellpadding='1' cellspacing='0'>
+      <tr>
+        <th colspan='6'>Frame 1</th>
+        <th colspan='6'>Frame 2</th>
+        <th colspan='6'>Frame 3</th>
+        <th colspan='6'>Frame 4</th>
+        <th colspan='6'>Frame 5</th>
+        <th colspan='6'>Frame 6</th>
+        <th colspan='6'>Frame 7</th>
+        <th colspan='6'>Frame 8</th>
+        <th colspan='6'>Frame 9</th>
+        <th colspan='6'>Frame 10</th>
+      </tr>
+      <tr>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='2'></td><td colspan='2'></td><td colspan='2'></td>
+      </tr>
+      <tr>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+        <td colspan='6'></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id='gameOver'></div>
+
+  <script th:src="@{/js/script.js}"></script>
+  </body>
+
+</html>

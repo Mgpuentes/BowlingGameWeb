@@ -15,10 +15,12 @@
   <body background="/images/bowling2.jpg">
 
   <div id='title' class='title'><h1>Bowling Scoresheet</h1></div>
+  <div id="finalScore"></div>
 
   <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class='wrapper text-center'>
     <div id="scoreButtons" class="btn-group mr-2" role="group" aria-label="First group">
+        <button id="button0" type="button" class="btn btn-secondary">0</button>
       <button id="button1" type="button" class="btn btn-secondary">1</button>
       <button id="button2" type="button" class="btn btn-secondary">2</button>
       <button id="button3" type="button" class="btn btn-secondary">3</button>
@@ -73,6 +75,10 @@
       </tr>
     </table>
   </div>
+
+  <div id='gameOver'></div>
+
+  <div id='test1' class='test1' style="display:none"><h1><a th:href="@{/}">Play Again?</a></h1></div>
 
   <!-- Bootstrap core JavaScript -->
   <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js}"></script>
